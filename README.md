@@ -48,6 +48,7 @@ git clone https://github.com/Anaismarthe12/jeu-de-cartes.git
 cd jeu-de-cartes
 
 #### 2. Installer et lancer le backend Symfony
+```bash
 cd backend
 
 # Installer les dépendances PHP
@@ -66,6 +67,7 @@ symfony server:start
 #### 3. Installer et lancer le frontend React
 
 cd ../frontend
+```bash
 
 # Installer les dépendances
 npm install
