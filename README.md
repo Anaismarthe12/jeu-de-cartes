@@ -18,13 +18,13 @@ Ce projet a été réalisé dans le cadre de mon apprentissage en développement
 
 ## 🛠️ Stack technique
 
-| Partie        | Technologies utilisées              |
-|--------------|-------------------------------------|
-| **Frontend** | React, TypeScript, CSS              |
-| **Backend**  | PHP, Symfony                        |
-| **API**      | REST (JSON), Fetch API              |
-| **Base de données** | MySQL ou PostgreSQL (au choix)     |
-| **Outils**   | Git, GitHub, Composer, npm, Docker (optionnel) |
+| Partie             | Technologies utilisées              |
+|-------------------|-------------------------------------|
+| **Frontend**       | React, TypeScript, CSS              |
+| **Backend**        | PHP, Symfony                        |
+| **API**            | REST (JSON), Fetch API              |
+| **Base de données**| MySQL ou PostgreSQL (au choix)      |
+| **Outils**         | Git, GitHub, Composer, npm, Docker (optionnel) |
 
 ---
 
@@ -32,12 +32,12 @@ Ce projet a été réalisé dans le cadre de mon apprentissage en développement
 
 ### 🧰 Prérequis
 
-- PHP 8.x
-- Composer
-- Symfony CLI
-- Node.js + npm
-- MySQL/PostgreSQL
-- Git
+- PHP 8.x  
+- Composer  
+- Symfony CLI  
+- Node.js + npm  
+- MySQL ou PostgreSQL  
+- Git  
 
 ### 🚀 Étapes
 
@@ -46,9 +46,6 @@ Ce projet a été réalisé dans le cadre de mon apprentissage en développement
 ```bash
 git clone https://github.com/Anaismarthe12/jeu-de-cartes.git
 cd jeu-de-cartes
-
-#### 2. Installer et lancer le backend Symfony
-```bash
 cd backend
 
 # Installer les dépendances PHP
@@ -64,15 +61,11 @@ php bin/console doctrine:migrations:migrate
 # Lancer le serveur Symfony
 symfony server:start
 
-#### 3. Installer et lancer le frontend React
 
 cd ../frontend
-```bash
 
 # Installer les dépendances
 npm install
 
 # Lancer le serveur de développement
 npm run dev
-
-
