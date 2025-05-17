@@ -1,141 +1,140 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #36417A; /* Couleur de fond de la navbar */
-    color: white;
-  }
-  
-  .navbar-left, .navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .menu-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #36417A; /* Couleur de fond de la navbar */
+  color: white;
+}
 
-  
-  .dropdown-menu {
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    background-color: #34495e;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    align-items: left;
-  }
-  
-  .dropdown-menu button {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .dropdown-menu button:hover {
-    background-color: #b7bee1;
-  }
-  .logo {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .game-name {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  .navbar-right button {
-    background: none;
-    border: 1px solid white;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .navbar-right button:hover {
-    background-color: #5265AD; /* Couleur au survol */
-<<<<<<< HEAD
-  }
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-  /*regles*/
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
 
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .modal-content {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 800px;
-    position: relative;
-    max-height: 90%;
-    overflow-y: auto;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .regles-images img {
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  }
-  
-  /*guide*/
-  .guide-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .guide-box {
-    background-color: #f0f0f0;
-    padding: 40px;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.3s;
-  }
-  
-  .guide-box:hover {
-    background-color: #d4e3ff;
-    transform: scale(1.03);
-  }
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background-color: #34495e;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: left;
+}
 
-  /* Styles de base pour les boutons de catégories */
+.dropdown-menu button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #b7bee1;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.game-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar-right button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navbar-right button:hover {
+  background-color: #5265AD; /* Couleur au survol */
+}
+
+/*regles*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.regles-images img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/*guide*/
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.guide-box {
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.guide-box:hover {
+  background-color: #d4e3ff;
+  transform: scale(1.03);
+}
+
+/* Styles de base pour les boutons de catégories */
 .category-buttons button {
   padding: 10px;
   margin: 5px;
@@ -191,7 +190,6 @@
   position: relative;
   width: 100%;
   overflow-y: auto;
-  
 }
 
 .regles-images {
@@ -208,6 +206,3 @@
 .inline-modal-content .category-buttons {
   text-align: center;
 }
-=======
-  }
->>>>>>> origin/main
