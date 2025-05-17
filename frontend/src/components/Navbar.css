@@ -67,6 +67,7 @@
   
   .navbar-right button:hover {
     background-color: #5265AD; /* Couleur au survol */
+<<<<<<< HEAD
   }
 
   /*regles*/
@@ -207,3 +208,6 @@
 .inline-modal-content .category-buttons {
   text-align: center;
 }
+=======
+  }
+>>>>>>> origin/main

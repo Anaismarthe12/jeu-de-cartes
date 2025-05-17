@@ -1,0 +1,12 @@
+# Node
+node_modules/
+.cache/
+*.pack
+
+# PHP
+vendor/
+
+# IDE / OS
+*.log
+.DS_Store
+.env

@@ -6,7 +6,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     color: rgb(255, 255, 255);
+=======
+    color: white;
+>>>>>>> origin/main
     text-align: center;
   }
   
@@ -14,8 +18,11 @@
     background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
     padding: 20px;
     border-radius: 10px;
+<<<<<<< HEAD
     text-align: center;
     margin-top: 100px;
+=======
+>>>>>>> origin/main
   }
   
   .home h1 {

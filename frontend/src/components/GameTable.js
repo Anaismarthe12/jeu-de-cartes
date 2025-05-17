@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 import React, { useState, useRef } from 'react';
+=======
+import React, { useState } from 'react';
+>>>>>>> origin/main
 import Dice from './Dice';
 import Hourglass from './Hourglass';
 import SectorDeck from './SectorDeck';
 import ShieldDeck from './ShieldDeck';
 import AttackDeck from './AttackDeck';
 import AttackPhase from './AttackPhase';
+<<<<<<< HEAD
 import GuessAttack from './GuessAttack';
+=======
+>>>>>>> origin/main
 import './GameTable.css';
 
 const GameTable = () => {
@@ -17,9 +24,12 @@ const GameTable = () => {
   const [diceValue, setDiceValue] = useState(null);
   const [gameWon, setGameWon] = useState(false);
   const [waitingForDiceRoll, setWaitingForDiceRoll] = useState(false);
+<<<<<<< HEAD
   const [isGuessing, setIsGuessing] = useState(false);
   const [currentAttackCard, setCurrentAttackCard] = useState(null);
   const hourglassRef = useRef(null);
+=======
+>>>>>>> origin/main
 
   const getShieldImage = (type, value) => {
     return require(`../assets/boucliers/bouclier-${value}-${type}.png`);
@@ -91,6 +101,7 @@ const GameTable = () => {
     setWaitingForDiceRoll(false);
   };
 
+<<<<<<< HEAD
   const handleAttackCardClick = () => {
     if (selectedAttacks.length > 0 && !isGuessing) {
       const currentCard = selectedAttacks[0];
@@ -134,6 +145,8 @@ const GameTable = () => {
     // Vous pouvez ajouter ici une logique pour gérer le succès/échec
   };
 
+=======
+>>>>>>> origin/main
   if (gameWon) {
     return (
       <div className="game-won">
@@ -152,10 +165,17 @@ const GameTable = () => {
       </div>
       <div className="game-table">
         <Dice onRoll={handleDiceRoll} isEnabled={waitingForDiceRoll} />
+<<<<<<< HEAD
         <Hourglass ref={hourglassRef} />
         
         {/* Zone des cartes d'attaque */}
         <div className="selected-attacks" onClick={handleAttackCardClick}>
+=======
+        <Hourglass />
+        
+        {/* Zone des cartes d'attaque */}
+        <div className="selected-attacks">
+>>>>>>> origin/main
           {selectedAttacks.map((attack, index) => (
             <div 
               key={index}
@@ -229,6 +249,7 @@ const GameTable = () => {
           isSpecialShield={selectedShields[selectedSectorForAttack][0].type === 'dark'}
         />
       )}
+<<<<<<< HEAD
 
       {isGuessing && currentAttackCard && (
         <GuessAttack 
@@ -236,6 +257,8 @@ const GameTable = () => {
           onGuessComplete={handleGuessComplete}
         />
       )}
+=======
+>>>>>>> origin/main
     </div>
   );
 };

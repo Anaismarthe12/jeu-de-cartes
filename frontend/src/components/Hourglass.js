@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 import './Hourglass.css';
 
 const Hourglass = forwardRef((props, ref) => {
+=======
+import React, { useState, useEffect } from 'react';
+import './Hourglass.css';
+
+const Hourglass = () => {
+>>>>>>> origin/main
   const [isFlowing, setIsFlowing] = useState(false);
   const [isRotating, setIsRotating] = useState(false);
   const [sandHeight, setSandHeight] = useState(100);
 
+<<<<<<< HEAD
   useImperativeHandle(ref, () => ({
     startTimer: () => {
       if (!isFlowing && !isRotating) {
@@ -15,6 +23,8 @@ const Hourglass = forwardRef((props, ref) => {
     }
   }));
 
+=======
+>>>>>>> origin/main
   const handleClick = () => {
     if (!isFlowing && !isRotating) {
       setIsFlowing(true);
@@ -56,6 +66,10 @@ const Hourglass = forwardRef((props, ref) => {
       <div className="stand"></div>
     </div>
   );
+<<<<<<< HEAD
 });
+=======
+};
+>>>>>>> origin/main
 
 export default Hourglass;

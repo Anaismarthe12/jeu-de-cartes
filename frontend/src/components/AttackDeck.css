@@ -111,7 +111,11 @@
   transform-style: preserve-3d;
 }
 
+<<<<<<< HEAD
 .attack-card.flipped .attack-card-inner {
+=======
+.attack-card:hover .attack-card-inner {
+>>>>>>> origin/main
   transform: rotateY(180deg);
 }
 
@@ -133,6 +137,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+<<<<<<< HEAD
 }
 
 .guess-modal {
@@ -176,3 +181,6 @@
 .proposition-btn:hover {
   background-color: #0056b3;
 }
+=======
+} 
+>>>>>>> origin/main
